@@ -1,0 +1,84 @@
+/* DEFINE TODOS OS CONTAINERS PARA SEREM DISPLEY FLEX COM WRAP */
+.container {
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+    border: 2px solid black;
+
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+
+/* 
+CONTAINER 1
+
+FLEX-GROW: 1 -> DIVS AJUSTAM PARA SEMPRE PREENCHER TODO O CONTAINER
+FLEX-SHRINK: 1 -> DIVS AJUSTAM SEU CONTEÚDO PARA CABER NO CONTAINER
+FLEX-BASIS: 0 -> DEFINE A LARGURA BASE DAS DIVS, SE DEIXAR ZERO ELES SE DIVIDEM EM LARGURAS IGUAIS
+*/
+#container1 .item {
+    padding: 1rem;
+    text-align: center;
+
+    flex: 1 1 0;
+}
+
+
+/* 
+CONTAINER 2
+
+FLEX-GROW: 1
+FLEX-SHRINK: 1
+FLEX-BASIS: auto -> DIVS SE AJUSTAM DE ACORDO COM SEU CONTEÚDO
+*/
+#container2 .item {
+    padding: 1rem;
+    text-align: center;
+
+    flex: 1 1 auto;
+}
+
+
+/* 
+CONTAINER 3
+
+FLEX-GROW: 0 -> DIVS NÃO SE AJUSTAM PARA PREENCHER TODO O CONTAINER
+FLEX-SHRINK: 1
+FLEX-BASIS: auto
+*/
+#container3 .item {
+    padding: 1rem;
+    text-align: center;
+
+    flex: 0 1 auto;
+}
+
+
+/* 
+CONTAINER 4
+
+FLEX-GROW: 0 -> 
+FLEX-SHRINK: 0 -> AO SEREM COMPRIMIDAS AS DIVS NÃO SE ENCOLHEM E VÃO "ESTOURAR" O CONTAINER
+FLEX-BASIS: auto
+*/
+#container4 .item {
+    padding: 1rem;
+    text-align: center;
+
+    flex: 0 0 auto;
+}
+
+
+
+#caixa1 {
+    background-color: lightblue;
+}
+#caixa2 {
+    background-color: lightcoral;
+}
+#caixa3 {
+    background-color: lightgreen;
+}
+#caixa4 {
+    background-color: lightpink;
+}
